@@ -35,6 +35,7 @@ public class Columna : MonoBehaviour
         //FinalPos = MyPos + DestPos * Time.deltaTime * mySpeed;
         //transform.position = FinalPos;
         //print(MyPos);
+        mySpeed = sphere.speed;
 
         transform.Translate(Vector3.back * Time.deltaTime * mySpeed);
 

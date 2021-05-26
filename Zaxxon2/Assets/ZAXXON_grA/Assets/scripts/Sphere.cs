@@ -12,11 +12,16 @@ public class Sphere : MonoBehaviour
     [SerializeField] Text timeText;
 
     private string currentTime;
+    public GameObject Nave;
+    private Sphere sphere;
+    public float mySpeed;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        Nave = GameObject.Find("Spaceship");
+        sphere = Nave.GetComponent<Sphere>();
+        mySpeed = sphere.speed;
     }
 
     // Update is called once per frame
@@ -24,6 +29,11 @@ public class Sphere : MonoBehaviour
     {
 
         MoverNave();
+
+        if (speed < 50f)
+        {
+            speed = speed + 0.1f;
+        }
 
         //Cambio el texto de la UI, metido en la variable speedText
         //Debe ser una cadena, si quiero`puedo convertir el float en string
@@ -85,9 +95,8 @@ public class Sphere : MonoBehaviour
         if (collision.gameObject.tag == "Respawn")
         {
             Debug.Log("objeto1 ha colisionado con objeto3");
+            speed = 0f;
             Destroy(gameObject);
-            columna = Columna.GetComponent<Columna>();
-            columna.mySpeed = 0;
             print(columna.mySpeed);
         }
 

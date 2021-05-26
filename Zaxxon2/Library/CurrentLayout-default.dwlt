@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 887, y: 494}
   m_MaxSize: {x: 18008, y: 14044}
   vertical: 0
-  controlID: 13
+  controlID: 30
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_MinSize: {x: 610, y: 494}
   m_MaxSize: {x: 14006, y: 14044}
   vertical: 1
-  controlID: 19
+  controlID: 31
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -191,7 +191,7 @@ MonoBehaviour:
   m_MinSize: {x: 610, y: 222}
   m_MaxSize: {x: 12010, y: 4022}
   vertical: 0
-  controlID: 20
+  controlID: 32
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -269,7 +269,7 @@ MonoBehaviour:
   m_MinSize: {x: 336, y: 272}
   m_MaxSize: {x: 14006, y: 10022}
   vertical: 0
-  controlID: 42
+  controlID: 54
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -414,20 +414,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/ZAXXON_grA/Assets/scripts
+    - Assets/ZAXXON_grA/Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/ZAXXON_grA/Assets/scripts
+  - Assets/ZAXXON_grA/Assets/Scenes
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: "I:\\Curso de Guion\\Curso de Videojuegos\\Desarrollo de entornos
-    interactivos multidispositivo (\xC1lvaro Holguera)\\Unity\\Zaxxon2"
+  m_LastProjectPath: "C:\\Users\\I\xF1igo\\Documents\\GitHub\\Zaxxon2\\Zaxxon2"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 522f0000
-    m_LastClickedID: 12114
+    m_SelectedIDs: e22d0000
+    m_LastClickedID: 11746
     m_ExpandedIDs: 00000000c82c00002c2d0000482e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -483,7 +482,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -622,9 +621,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: e62c0000
       m_LastClickedID: 0
-      m_ExpandedIDs: 76fbffff
+      m_ExpandedIDs: 3cfaffffb4faffff76fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -717,7 +716,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.06686379, y: 0.16151023, z: -0.010968448, w: -0.9845443}
     speed: 2
-    m_Value: {x: -0.066863656, y: 0.1615099, z: -0.010968425, w: -0.9845423}
+    m_Value: {x: -0.06686378, y: 0.16151023, z: -0.010968447, w: -0.9845443}
   m_Size:
     m_Target: 7.04968
     speed: 2
@@ -801,7 +800,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 12428
+  m_LastSelectedObjectID: -4512
 --- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 52
