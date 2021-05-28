@@ -15,6 +15,9 @@ public class Sphere : MonoBehaviour
     public GameObject Nave;
     private Sphere sphere;
     public float mySpeed;
+    public ParticleSystem fuego;
+    public AudioClip explosion;
+    public AudioSource audio;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +25,7 @@ public class Sphere : MonoBehaviour
         Nave = GameObject.Find("Spaceship");
         sphere = Nave.GetComponent<Sphere>();
         mySpeed = sphere.speed;
+        audio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -96,8 +100,9 @@ public class Sphere : MonoBehaviour
         {
             Debug.Log("objeto1 ha colisionado con objeto3");
             speed = 0f;
+            Instantiate(fuego, transform.position, transform.rotation);
+            audio.PlayOneShot(explosion, 5f);
             Destroy(gameObject);
-            print(columna.mySpeed);
         }
 
     }
