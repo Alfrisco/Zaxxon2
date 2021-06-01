@@ -10,6 +10,7 @@ public class Sphere : MonoBehaviour
     private Columna columna;
     [SerializeField] Text speedText;
     [SerializeField] Text timeText;
+    Renderer rend;
 
     private string currentTime;
     public GameObject Nave;
@@ -19,6 +20,7 @@ public class Sphere : MonoBehaviour
     public AudioClip explosion;
     public AudioSource audio;
 
+    bool alive;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +28,8 @@ public class Sphere : MonoBehaviour
         sphere = Nave.GetComponent<Sphere>();
         mySpeed = sphere.speed;
         audio = GetComponent<AudioSource>();
+        rend = GetComponent<Renderer>();
+        alive = true;
     }
 
     // Update is called once per frame
@@ -34,7 +38,7 @@ public class Sphere : MonoBehaviour
 
         MoverNave();
 
-        if (speed < 50f)
+        if (speed < 50f && alive == true)
         {
             speed = speed + 0.1f;
         }
@@ -102,7 +106,8 @@ public class Sphere : MonoBehaviour
             speed = 0f;
             Instantiate(fuego, transform.position, transform.rotation);
             audio.PlayOneShot(explosion, 5f);
-            Destroy(gameObject);
+            rend.enabled = false;
+            alive = false;
         }
 
     }
